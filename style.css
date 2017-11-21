@@ -1,0 +1,202 @@
+/*
+Theme Name: Paprikas 2018
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Toshi Kunisada (tkunisada@gmail.com)
+Author URI: http://wordpress.org/
+Description: The 2018 theme for Paprikas
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: paprikas
+Text Domain: twentythirteen
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+ */
+body {
+  background-color: #FCA164;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.0625em;
+  color: black;
+}
+
+h1 {
+  color: #9F1D11;
+  font-size: 60px;
+}
+
+h2 {
+  color: #71150c;
+  font-size: 36px;
+}
+
+h1, h2, h3 {
+  font-family: 'Sail', cursive;
+}
+
+a {
+  color: #147214;
+}
+
+a:hover {
+  color: #1c9d1c;
+}
+
+.top-label {
+  background-color: black;
+  color: #FCA164;
+}
+
+.header {
+  background: url("translucent-fibres.png") #9F1D11;
+  padding: 1rem 0;
+  border-bottom: 1px solid #71150c;
+  border-top: 1rem solid #71150c;
+}
+
+.header-text {
+  font-size: smaller;
+  color: #FAF5DB;
+}
+
+.headline hr {
+  border-color: rgba(159, 29, 17, 0.2);
+}
+
+.boxshadow {
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+}
+
+.main-content {
+  background: url("translucent-fibres.png") #F8DCB5;
+  padding: 3rem 0;
+}
+
+.main-content .blah {
+  padding: 0 3rem 0;
+}
+
+.main-content .blah p {
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  color: #FAF5DB;
+  padding: 3rem 0;
+  background-color: #71150c;
+  border-top: solid 1px black;
+}
+
+.footer a {
+  color: #FCA164;
+}
+
+.footer a:hover {
+  color: #F8DCB5;
+}
+
+.fdm-section-header {
+  color: #9F1D11;
+  padding-top: 3rem;
+}
+
+.fdm-item-title {
+  font-weight: bold;
+}
+
+.navbar-default {
+  background-color: black;
+  border-color: #71150c;
+}
+
+.navbar-default .navbar-brand {
+  color: #FCA164;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #FAF5DB;
+}
+
+.navbar-default .navbar-text {
+  color: #FCA164;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FCA164;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #FAF5DB;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FAF5DB;
+  background-color: #71150c;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #FAF5DB;
+  background-color: #71150c;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #71150c;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #71150c;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FCA164;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #FCA164;
+}
+
+.navbar-default .navbar-link {
+  color: #FCA164;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #FAF5DB;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FCA164;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #FAF5DB;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FAF5DB;
+    background-color: #71150c;
+  }
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}

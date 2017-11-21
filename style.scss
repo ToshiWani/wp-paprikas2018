@@ -1,0 +1,229 @@
+/*
+Theme Name: Paprikas 2018
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Toshi Kunisada (tkunisada@gmail.com)
+Author URI: http://wordpress.org/
+Description: The 2018 theme for Paprikas
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: paprikas
+Text Domain: twentythirteen
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+ */
+
+// Basic Colors
+$red: #9F1D11;
+$pastel: #F8DCB5;
+$orange: #FCA164;
+$cream: #FAF5DB;
+$green: #147214;
+
+// Extended Colors
+$darkRed: darken($red, 10%);
+$black: darken($red, 80%);
+$lightGreen: lighten($green, 10%);
+$darkGreen: darken($green, 10%);
+
+body{
+    background-color: $orange;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.0625em;
+    color: $black;
+}
+
+h1{
+    color: $red;
+    font-size: 60px;
+}
+
+h2{
+    color: $darkRed;
+    font-size: 36px;
+}
+
+h1, h2, h3{
+    font-family: 'Sail', cursive;
+}
+
+a{
+    color: $green;
+}
+
+a:hover{
+    color: $lightGreen;
+}
+
+.top-label{
+    background-color: $black;
+    color: $orange;
+}
+
+
+.header{
+    background: url("translucent-fibres.png") $red;
+    padding: 1rem 0;
+    border-bottom: 1px solid $darkRed;
+    border-top: 1rem solid $darkRed;
+}
+
+.header-text{
+    font-size: smaller;
+    color: $cream;
+}
+
+.headline{
+    hr{
+        border-color: transparentize($red, 0.8);
+    }
+}
+
+.boxshadow{
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+}
+
+.main-content{
+    background: url("translucent-fibres.png") $pastel;
+    padding: 3rem 0;
+    .blah{
+        padding: 0 3rem 0;
+        p{
+            line-height: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.brand-centered {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.brand-centered .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    color: $cream;
+    padding: 3rem 0;
+    background-color: $darkRed;
+    border-top: solid 1px $black;
+
+    a{
+        color: $orange;
+    }
+    a:hover{
+        color: $pastel;
+    }
+
+}
+
+//
+// Restaurant Menu
+//
+
+.fdm-section-header{
+    color: $red;
+  padding-top: 3rem;
+}
+
+.fdm-item-title{
+    font-weight: bold;
+
+}
+
+.fdm-menu-content{
+
+}
+
+
+//
+//  Bootstrap Navbar
+//
+
+$bgDefault      : $black;
+$bgHighlight    : $darkRed;
+$colDefault     : $orange;
+$colHighlight   : $cream;
+$dropDown       : false;
+.navbar-default {
+    background-color: $bgDefault;
+    border-color: $bgHighlight;
+    .navbar-brand {
+        color: $colDefault;
+        &:hover, &:focus {
+            color: $colHighlight; }}
+    .navbar-text {
+        color: $colDefault; }
+    .navbar-nav {
+        > li {
+            > a {
+                color: $colDefault;
+                &:hover,  &:focus {
+                    color: $colHighlight; }}
+            @if $dropDown {
+                > .dropdown-menu {
+                    background-color: $bgDefault;
+                    > li {
+                        > a {
+                            color: $colDefault;
+                            &:hover,  &:focus {
+                                color: $colHighlight;
+                                background-color: $bgHighlight; }}
+                        &.divider {
+                            background-color: $bgHighlight;}}}}}
+        @if $dropDown {
+            .open .dropdown-menu > .active {
+                > a, > a:hover, > a:focus {
+                    color: $colHighlight;
+                    background-color: $bgHighlight; }}}
+        > .active {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+        > .open {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}}
+    .navbar-toggle {
+        border-color: $bgHighlight;
+        &:hover, &:focus {
+            background-color: $bgHighlight; }
+        .icon-bar {
+            background-color: $colDefault; }}
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $colDefault; }
+    .navbar-link {
+        color: $colDefault;
+        &:hover {
+            color: $colHighlight; }}}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu {
+        > li > a {
+            color: $colDefault;
+            &:hover, &:focus {
+                color: $colHighlight; }}
+        > .active {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}}
+}
+
+
+.navbar{
+    .navbar-nav{
+        display: inline-block;
+        float: none;
+    }
+    .navbar-collapse{
+        text-align: center;
+    }
+
+}
