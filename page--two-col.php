@@ -42,6 +42,5 @@ Template Name: Two Columns
 </div>
 
 <?php get_footer(); ?>
-<?php wp_footer(); ?>
 </body>
 </html>
