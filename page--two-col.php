@@ -28,7 +28,7 @@ Template Name: Two Columns
 
         <!-- Main Content -->
         <div class="row">
-            <div class="col-md-8 blah">
+            <div class="col-md-8 main-content__text">
                 <?php
                 if(have_posts()):
                     while (have_posts()):

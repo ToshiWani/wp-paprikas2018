@@ -46,7 +46,7 @@ a:hover {
 }
 
 .header {
-  background: url("translucent-fibres.png") #9F1D11;
+  background: url("img/translucent-fibres.png") #9F1D11;
   padding: 1rem 0;
   border-bottom: 1px solid #71150c;
   border-top: 1rem solid #71150c;
@@ -61,38 +61,18 @@ a:hover {
   border-color: rgba(159, 29, 17, 0.2);
 }
 
-.boxshadow {
-  -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
-}
-
 .main-content {
-  background: url("translucent-fibres.png") #F8DCB5;
+  background: url("img/translucent-fibres.png") #F8DCB5;
   padding: 3rem 0;
 }
 
-.main-content .blah {
+.main-content .main-content__text {
   padding: 0 3rem 0;
 }
 
-.main-content .blah p {
+.main-content .main-content__text p {
   line-height: 3rem;
   margin-bottom: 3rem;
-}
-
-.brand-centered {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.brand-centered .navbar-brand {
-  display: flex;
-  align-items: center;
 }
 
 .footer {
