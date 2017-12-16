@@ -9,22 +9,25 @@ Template Name: Menu Page Template
 <html lang="en">
 <?php get_header(); ?>
 
+<body <?php body_class() ?>>
+<?php include_once 'header-nav.php'; ?>
 <div class="main-content">
     <div class="container">
+
+        <!-- Headline -->
         <div class="row">
             <div class="col-xs-12 headline">
-
                 <h1><?php wp_title('') ?></h1>
-
                 <?php
                 if (get_field('headline')):
-                    echo the_field('headline');
+                    the_field('headline');
                 endif;
                 ?>
                 <hr />
             </div>
         </div>
 
+        <!-- Main Content -->
         <div class="row">
             <div class="col-xs-12">
                 <?php
@@ -43,7 +46,7 @@ Template Name: Menu Page Template
 
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
-</body>
+</>
 </html>
 
 
