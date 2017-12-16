@@ -90,6 +90,10 @@ a:hover {
   color: #F8DCB5;
 }
 
+.footer .footer__mobile-nav {
+  text-align: center;
+}
+
 .fdm-section-header {
   color: #9F1D11;
   padding-top: 3rem;

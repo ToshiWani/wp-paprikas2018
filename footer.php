@@ -13,7 +13,7 @@
                 <?php wp_nav_menu(array(
                     'theme_location'=>'footer',
                     'menu_class' => 'paprikas2018__footer-nav',
-                    'items_wrap' => '<ul id="%1$s" class="%2$s list-unstyled">%3$s</ul>',
+                    'items_wrap' => '<ul id="%1$s" class="%2$s list-unstyled footer__mobile-nav">%3$s</ul>',
                 )); ?>
             </div>
         </div>
