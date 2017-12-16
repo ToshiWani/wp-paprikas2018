@@ -62,7 +62,6 @@ add_filter('get_custom_logo', function($html){
     return $html;
 });
 
-//require_once get_template_directory() . 'wp-bootstrap-navwalker.php';
 
-require_once get_template_directory() . '/Walker_Nav_Menu_With_Separator.php';
+require_once get_template_directory() . '/inc/Walker_Nav_Menu_With_Separator.php';
 
