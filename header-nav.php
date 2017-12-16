@@ -11,7 +11,14 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri() . '/logo_v2.png' ?>" alt="">
+                <?php
+                    // Display Logo
+                    $custom_logo_id = get_theme_mod('custom_logo');
+                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                    if(has_custom_logo()){
+                        echo '<img class="img-responsive center-block" src="' . esc_url($logo[0]) . '">';
+                    }
+                ?>
             </div>
             <div class="col-sm-4">
                 <div class="hidden-xs header-text text-right">
