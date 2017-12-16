@@ -46,7 +46,7 @@ Template Name: Menu Page Template
 
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
-</>
+</body>
 </html>
 
 
