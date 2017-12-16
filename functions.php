@@ -5,7 +5,7 @@ add_action('wp_enqueue_scripts', function(){
     wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Merriweather:400,700|Sail', array(), '1.0.0');
     // Styles
     wp_enqueue_style('bootstrap-style', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), '1.0.0');
-    wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0');
+    wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0');
     // JS
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-2.2.4.min.js', array(),'', true);
     wp_enqueue_script('bootstrap-script', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array(),'', true);
