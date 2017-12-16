@@ -1,26 +1,22 @@
-// Sassのコンパイルタスクのサンプルファイルです。
+// Sass compile task
 
-// gulpプラグインの読み込み
+// Load gulp plugin
 const gulp = require('gulp');
-// Sassをコンパイルするプラグインの読み込み
+// Load Sass plugin
 const sass = require('gulp-sass');
 
-// style.scssの監視タスクを作成する
+// Watching style.scss
 gulp.task('default', function () {
-    // ★ style.scssファイルを監視
-    gulp.watch('style.scss', function () {
-        // style.scssの更新があった場合の処理
-
-        // style.scssファイルを取得
-        gulp.src('style.scss')
-        // Sassのコンパイルを実行
+    gulp.watch('css/style.scss', function () {
+        // Task when style.scss is updated
+        gulp.src('css/style.scss')
+        // Start compile
             .pipe(sass({
                 outputStyle: 'expanded'
             })
-            // Sassのコンパイルエラーを表示
-            // (これがないと自動的に止まってしまう)
+            // Display Sass compile error.  Compiler will stop without this.
                 .on('error', sass.logError))
-            // cssフォルダー以下に保存
-            .pipe(gulp.dest(''));
+            // Save changes on the css directory
+            .pipe(gulp.dest('css'));
     });
 });
