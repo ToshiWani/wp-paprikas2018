@@ -46,7 +46,7 @@ a:hover {
 }
 
 .header {
-  background: url("../img/translucent-fibres.png") #9F1D11;
+  background: url("img/translucent-fibres.png") #9F1D11;
   padding: 1rem 0;
   border-bottom: 1px solid #71150c;
   border-top: 1rem solid #71150c;
@@ -62,7 +62,7 @@ a:hover {
 }
 
 .main-content {
-  background: url("../img/translucent-fibres.png") #F8DCB5;
+  background: url("img/translucent-fibres.png") #F8DCB5;
   padding: 3rem 0;
 }
 
@@ -101,6 +101,11 @@ a:hover {
 
 .fdm-item-title {
   font-weight: bold;
+}
+
+#paprikas2018-top-slider .nivoSlider {
+  max-height: 420px !important;
+  overflow: hidden;
 }
 
 .navbar-default {

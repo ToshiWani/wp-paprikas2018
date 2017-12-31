@@ -33,7 +33,7 @@
     </div>
 </header>
 
-<div class="paprikas2018_top_slider">
+<div id="paprikas2018-top-slider">
     <?php
     if (is_active_sidebar('paprikas2018_top_slider')) :
         dynamic_sidebar('paprikas2018_top_slider');

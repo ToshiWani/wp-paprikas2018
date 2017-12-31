@@ -7,9 +7,9 @@ const sass = require('gulp-sass');
 
 // Watching style.scss
 gulp.task('default', function () {
-    gulp.watch('css/style.scss', function () {
+    gulp.watch('style.scss', function () {
         // Task when style.scss is updated
-        gulp.src('css/style.scss')
+        gulp.src('style.scss')
         // Start compile
             .pipe(sass({
                 outputStyle: 'expanded'
@@ -17,6 +17,6 @@ gulp.task('default', function () {
             // Display Sass compile error.  Compiler will stop without this.
                 .on('error', sass.logError))
             // Save changes on the css directory
-            .pipe(gulp.dest('css'));
+            .pipe(gulp.dest(''));
     });
 });
