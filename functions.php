@@ -17,6 +17,7 @@ add_action('init', function(){
 
     register_nav_menu('primary', 'Primary Header Navigation');
     register_nav_menu('footer', 'Footer Navigation');
+    register_nav_menu('mobile', 'Mobile Navigation');
 
     register_sidebar(array(
         'name' => 'Top Slider',
@@ -64,4 +65,4 @@ add_filter('get_custom_logo', function($html){
 
 
 require_once get_template_directory() . '/inc/Walker_Nav_Menu_With_Separator.php';
-
+require_once get_template_directory() . '/inc/Walker_Nav_Menu_Mobile.php';

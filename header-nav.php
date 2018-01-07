@@ -42,16 +42,8 @@
 </div>
 
 
-<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0;">
+<nav class="navbar navbar-default navbar-static-top hidden-xs" style="margin-bottom: 0;">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
         <div id="navbar9" class="navbar-collapse collapse">
             <?php
             wp_nav_menu(array(

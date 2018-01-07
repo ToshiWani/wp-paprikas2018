@@ -37,4 +37,14 @@
     </div>
 </footer>
 
+<?php
+wp_nav_menu(array(
+    'theme_location' => 'mobile',
+    'container_class' => 'visible-xs',
+    'container_id' => 'paprikas2018-mobile-navbar',
+    'items_wrap' => '<div class="col-xs-12 navbar-inverse navbar-fixed-bottom"><div class="row">%3$s</div></div>',
+    'walker' => new Walker_Nav_Menu_Mobile()
+));
+?>
+
 <?php wp_footer(); ?>

@@ -10,7 +10,7 @@ Tags: paprikas
 Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
- */
+*/
 body {
   background-color: #FCA164;
   font-family: 'Merriweather', serif;
@@ -188,4 +188,44 @@ a:hover {
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+#paprikas2018-mobile-navbar .nav-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#paprikas2018-mobile-navbar .navbar-fixed-bottom {
+  padding: 1rem 0;
+  background-color: black;
+}
+
+#paprikas2018-mobile-navbar .navbar-fixed-bottom a {
+  color: #FCA164;
+}
+
+#paprikas2018-mobile-navbar .navbar-fixed-bottom a:focus, #paprikas2018-mobile-navbar .navbar-fixed-bottom a:hover {
+  text-decoration-line: none;
+  background-color: transparent;
+}
+
+#paprikas2018-mobile-navbar .dropdown-menu {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 6rem;
+}
+
+#paprikas2018-mobile-navbar .dropdown-menu li {
+  padding: 1.6rem 0;
+}
+
+#paprikas2018-mobile-navbar .dropdown-menu li a {
+  text-align: center;
+  color: #FCA164;
+}
+
+#paprikas2018-mobile-navbar img.nav-icon {
+  width: 24px;
+  height: 24px;
 }

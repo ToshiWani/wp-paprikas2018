@@ -10,6 +10,7 @@ Plugin Dependencies
 - Meta Slider
 - Text Blocks
 - TinyMCE Advanced
+- Menu Image
 
 Add Pages
 ----------------------------
@@ -41,7 +42,8 @@ Settings > Reading > A Static Page
 Navigation
 ----------------------------
 Appearance > Menus
-- Add navigation in header and footer.
+- Add navigation in header, footer, and mobile
+- Upload and set menu icons
 
 
 Custom Fields

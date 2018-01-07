@@ -10,20 +10,25 @@ Tags: paprikas
 Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
- */
+*/
 
+//
 // Basic Colors
+//
 $red: #9F1D11;
 $pastel: #F8DCB5;
 $orange: #FCA164;
 $cream: #FAF5DB;
 $green: #147214;
 
+//
 // Extended Colors
+//
 $darkRed: darken($red, 10%);
 $black: darken($red, 80%);
 $lightGreen: lighten($green, 10%);
 $darkGreen: darken($green, 10%);
+
 
 body{
     background-color: $orange;
@@ -135,7 +140,6 @@ a:hover{
     .nivoSlider {
         max-height: 420px !important;
         overflow: hidden;
-
     }
 }
 
@@ -223,4 +227,53 @@ $dropDown       : false;
         text-align: center;
     }
 
+}
+
+
+//
+//  Mobile Navigation
+//
+#paprikas2018-mobile-navbar {
+
+    .nav-item {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .navbar-fixed-bottom {
+        padding: 1rem 0;
+        background-color: $bgDefault;
+
+        a {
+            color: $colDefault;
+        }
+
+        a:focus, a:hover {
+            text-decoration-line: none;
+            background-color: transparent;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $bgDefault;
+        width: 100%;
+        position: fixed;
+        bottom: 6rem;
+
+        li {
+            //min-height: 5rem;
+            //min-width: 5rem;
+            padding: 1.6rem 0;
+
+            a {
+                text-align: center;
+                color: $colDefault;
+            }
+        }
+    }
+
+    img.nav-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
