@@ -274,25 +274,21 @@ $dropDown: false;
     background-color: $bgDefault;
   }
 
-
   a {
-    &.nav-item {
+    &.nav-item, &.nav-item:focus, &.nav-item:hover, &.nav-item:active  {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 11px;
       color: $colDefault;
-    }
-
-    &.nav-item:focus, &.nav-item:hover, &.nav-item:active {
+      background-color: $bgDefault;
       text-decoration: none !important;
-      @include gradient-center-lighten(0.25);
     }
-
   }
 
 
   .mobile-menu-item:focus, .mobile-menu-item:hover, .mobile-menu-item:active {
     @include gradient-center-lighten(0.25);
   }
+
 
   .dropdown-menu {
     background-color: $bgDefault;
@@ -301,9 +297,11 @@ $dropDown: false;
     bottom: 6rem;
 
     li {
-      //min-height: 5rem;
-      //min-width: 5rem;
       padding: 1.6rem 0;
+
+      &:focus, &:hover, &:active {
+        @include gradient-center-lighten(0.25);
+      }
 
       a {
         text-align: center;

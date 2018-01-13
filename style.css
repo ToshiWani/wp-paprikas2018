@@ -195,17 +195,12 @@ a:hover {
   background-color: black;
 }
 
-#paprikas2018-mobile-navbar a.nav-item {
+#paprikas2018-mobile-navbar a.nav-item, #paprikas2018-mobile-navbar a.nav-item:focus, #paprikas2018-mobile-navbar a.nav-item:hover, #paprikas2018-mobile-navbar a.nav-item:active {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   color: #FCA164;
-}
-
-#paprikas2018-mobile-navbar a.nav-item:focus, #paprikas2018-mobile-navbar a.nav-item:hover, #paprikas2018-mobile-navbar a.nav-item:active {
+  background-color: black;
   text-decoration: none !important;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 #paprikas2018-mobile-navbar .mobile-menu-item:focus, #paprikas2018-mobile-navbar .mobile-menu-item:hover, #paprikas2018-mobile-navbar .mobile-menu-item:active {
@@ -223,6 +218,12 @@ a:hover {
 
 #paprikas2018-mobile-navbar .dropdown-menu li {
   padding: 1.6rem 0;
+}
+
+#paprikas2018-mobile-navbar .dropdown-menu li:focus, #paprikas2018-mobile-navbar .dropdown-menu li:hover, #paprikas2018-mobile-navbar .dropdown-menu li:active {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 #paprikas2018-mobile-navbar .dropdown-menu li a {
