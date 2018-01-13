@@ -190,21 +190,18 @@ a:hover {
   text-align: center;
 }
 
-#paprikas2018-mobile-navbar .nav-item {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-}
-
 #paprikas2018-mobile-navbar .navbar-fixed-bottom {
   padding: 1rem 0;
   background-color: black;
 }
 
-#paprikas2018-mobile-navbar .navbar-fixed-bottom a {
-  color: #FCA164;
+#paprikas2018-mobile-navbar .nav-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
 }
 
-#paprikas2018-mobile-navbar .navbar-fixed-bottom a:focus, #paprikas2018-mobile-navbar .navbar-fixed-bottom a:hover, #paprikas2018-mobile-navbar .navbar-fixed-bottom a:active {
+#paprikas2018-mobile-navbar a.nav-item, #paprikas2018-mobile-navbar a.nav-item:focus, #paprikas2018-mobile-navbar a.nav-item:hover, #paprikas2018-mobile-navbar a.nav-item:active {
+  color: #FCA164;
   text-decoration: none !important;
 }
 
