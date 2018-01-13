@@ -205,7 +205,7 @@ a:hover {
 }
 
 #paprikas2018-mobile-navbar .navbar-fixed-bottom a:focus, #paprikas2018-mobile-navbar .navbar-fixed-bottom a:hover, #paprikas2018-mobile-navbar .navbar-fixed-bottom a:active {
-  text-decoration-line: none;
+  text-decoration: none !important;
 }
 
 #paprikas2018-mobile-navbar .mobile-menu-item:focus, #paprikas2018-mobile-navbar .mobile-menu-item:hover, #paprikas2018-mobile-navbar .mobile-menu-item:active {

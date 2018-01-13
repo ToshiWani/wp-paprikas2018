@@ -249,8 +249,7 @@ $dropDown       : false;
         }
 
         a:focus, a:hover, a:active {
-            text-decoration-line: none;
-            //color: $lightGreen;
+            text-decoration: none !important;
         }
     }
 
