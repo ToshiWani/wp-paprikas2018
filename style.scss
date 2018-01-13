@@ -280,7 +280,7 @@ $dropDown: false;
       font-size: 11px;
       color: $colDefault;
       background-color: $bgDefault;
-      text-decoration: none !important;
+      text-decoration: none;
     }
   }
 
@@ -298,10 +298,6 @@ $dropDown: false;
 
     li {
       padding: 1.6rem 0;
-
-      &:focus, &:hover, &:active {
-        @include gradient-center-lighten(0.25);
-      }
 
       a {
         text-align: center;
