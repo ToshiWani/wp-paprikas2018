@@ -31,7 +31,7 @@ class Walker_Nav_Menu_Mobile extends Walker_Nav_Menu
 
         if ($depth == 0){
             $output .= $item->url == '#'
-                ? "<div class='col-xs-3 text-center dropdown mobile-menu-item' ontouchstart=\"\">\n" . $hyperlink
+                ? "<div class='col-xs-3 text-center dropdown mobile-menu-item'>\n" . $hyperlink
                 : "<div class='col-xs-3 text-center'>\n" . $hyperlink;
 
         } else if ($depth == 1){

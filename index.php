@@ -2,7 +2,7 @@
 <html lang="en">
 <?php get_header(); ?>
 
-<body <?php body_class() ?>>
+<body <?php body_class() ?> ontouchstart="">
 <?php include_once 'header-nav.php'; ?>
 <div class="main-content">
     <div class="container">
