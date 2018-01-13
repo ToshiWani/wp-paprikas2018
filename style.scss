@@ -286,7 +286,7 @@ $dropDown: false;
 
 
   .mobile-menu-item:focus, .mobile-menu-item:hover, .mobile-menu-item:active {
-    //@include gradient-center-lighten(0.25);
+    @include gradient-center-lighten(0.25);
   }
 
 
