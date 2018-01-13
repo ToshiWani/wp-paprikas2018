@@ -276,6 +276,7 @@ $dropDown: false;
   a.nav-item, a.nav-item:focus, a.nav-item:hover, a.nav-item:active {
     color: $colDefault;
     text-decoration: none !important;
+    background-color: $bgDefault;
   }
 
   @mixin gradient-center-lighten($transparent: 0.25) {

@@ -203,6 +203,7 @@ a:hover {
 #paprikas2018-mobile-navbar a.nav-item, #paprikas2018-mobile-navbar a.nav-item:focus, #paprikas2018-mobile-navbar a.nav-item:hover, #paprikas2018-mobile-navbar a.nav-item:active {
   color: #FCA164;
   text-decoration: none !important;
+  background-color: black;
 }
 
 #paprikas2018-mobile-navbar .mobile-menu-item:focus, #paprikas2018-mobile-navbar .mobile-menu-item:hover, #paprikas2018-mobile-navbar .mobile-menu-item:active {
