@@ -61,6 +61,43 @@ Appearance > Menus
 - Upload and set menu icons
 
 
+Text Blocks
+----------------------------
+Add contents
+- Business hours
+- Contact info
+- Follow us
+
+
+Widgets
+----------------------------
+Appearance > Widgets
+
+- Top Slider for Desktop
+    - Meta Slider : Desktop
+    
+- Top Slider for Mobile
+    - Meta Slider : Mobile
+
+- Header Left
+    - Text Blocks : Business hours
+
+- Header Right
+    - Text Blocks : Contact info
+    - Custom HTML : Credit card icons
+
+- Footer Left
+    - Text Blocks : Business hours
+    - Text Blocks : Contact info
+    - Text Blocks : Follow us
+
+- Footer Right
+    - Custom HTML : Google map html
+
+- Front Page Right
+    - Text : Enter the shortcode for Instagram plugin "[instagram-feed num=4 cols=2]"
+
+
 Custom Fields
 ----------------------------
 Configurations:

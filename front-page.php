@@ -39,7 +39,13 @@ Template Name: Two Columns
                 ?>
             </div>
             <div class="col-md-4">
-                <?php echo do_shortcode("[instagram-feed num=4 cols=2]") ?>
+                <?php
+                if (is_active_sidebar('paprikas2018_front_page_right')) :
+                    dynamic_sidebar('paprikas2018_front_page_right');
+                endif;
+                ?>
+
+                <?php //echo do_shortcode("[instagram-feed num=4 cols=2]") ?>
             </div>
         </div>
 
