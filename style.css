@@ -77,7 +77,7 @@ a:hover {
 
 .footer {
   color: #FAF5DB;
-  padding: 3rem 0;
+  padding: 3rem 0 6rem;
   background-color: #71150c;
   border-top: solid 1px black;
 }
@@ -195,18 +195,19 @@ a:hover {
   background-color: black;
 }
 
-#paprikas2018-mobile-navbar a.nav-item, #paprikas2018-mobile-navbar a.nav-item:focus, #paprikas2018-mobile-navbar a.nav-item:hover, #paprikas2018-mobile-navbar a.nav-item:active {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
+#paprikas2018-mobile-navbar a {
   color: #FCA164;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: transparent;
+}
+
+#paprikas2018-mobile-navbar a.menu-item, #paprikas2018-mobile-navbar a.menu-item:focus, #paprikas2018-mobile-navbar a.menu-item:hover, #paprikas2018-mobile-navbar a.menu-item:active {
   text-decoration: none;
 }
 
-#paprikas2018-mobile-navbar .mobile-menu-item:focus, #paprikas2018-mobile-navbar .mobile-menu-item:hover, #paprikas2018-mobile-navbar .mobile-menu-item:active {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+#paprikas2018-mobile-navbar a.current-menu-item, #paprikas2018-mobile-navbar a.current_page_item, #paprikas2018-mobile-navbar a.current-menu-ancestor, #paprikas2018-mobile-navbar a.current-menu-parent {
+  color: #1c9d1c;
 }
 
 #paprikas2018-mobile-navbar .dropdown-menu {
@@ -220,15 +221,13 @@ a:hover {
   padding: 1.6rem 0;
 }
 
-#paprikas2018-mobile-navbar .dropdown-menu li:focus, #paprikas2018-mobile-navbar .dropdown-menu li:hover, #paprikas2018-mobile-navbar .dropdown-menu li:active {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
-}
-
 #paprikas2018-mobile-navbar .dropdown-menu li a {
   text-align: center;
   color: #FCA164;
+}
+
+#paprikas2018-mobile-navbar .dropdown-menu li a.current-menu-item, #paprikas2018-mobile-navbar .dropdown-menu li a.current_page_item {
+  color: #1c9d1c;
 }
 
 #paprikas2018-mobile-navbar img.nav-icon {

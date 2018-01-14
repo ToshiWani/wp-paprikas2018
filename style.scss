@@ -96,7 +96,7 @@ a:hover {
 
 .footer {
   color: $cream;
-  padding: 3rem 0;
+  padding: 3rem 0 6rem;
   background-color: $darkRed;
   border-top: solid 1px $black;
 
@@ -261,11 +261,6 @@ $dropDown: false;
 //
 //  Mobile Navigation
 //
-@mixin gradient-center-lighten($transparent: 0.25) {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, $transparent) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, $transparent) 50%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, $transparent) 50%, rgba(255, 255, 255, 0) 100%);
-}
 
 #paprikas2018-mobile-navbar {
 
@@ -275,20 +270,19 @@ $dropDown: false;
   }
 
   a {
-    &.nav-item, &.nav-item:focus, &.nav-item:hover, &.nav-item:active  {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      color: $colDefault;
-      background-color: transparent;
+    color: $colDefault;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+
+    &.menu-item, &.menu-item:focus, &.menu-item:hover, &.menu-item:active {
       text-decoration: none;
     }
+
+    &.current-menu-item, &.current_page_item, &.current-menu-ancestor, &.current-menu-parent {
+      color: $lightGreen;
+    }
   }
-
-
-  .mobile-menu-item:focus, .mobile-menu-item:hover, .mobile-menu-item:active {
-    @include gradient-center-lighten(0.25);
-  }
-
 
   .dropdown-menu {
     background-color: $bgDefault;
@@ -296,18 +290,16 @@ $dropDown: false;
     position: fixed;
     bottom: 6rem;
 
-
-
     li {
       padding: 1.6rem 0;
-
-      &:focus, &:hover, &:active {
-        @include gradient-center-lighten(0.25);
-      }
 
       a {
         text-align: center;
         color: $colDefault;
+
+        &.current-menu-item, &.current_page_item {
+          color: $lightGreen;
+        }
       }
     }
   }

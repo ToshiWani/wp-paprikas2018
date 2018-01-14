@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 hidden-xs">
+        <div class="row hidden-xs">
+            <div class="col-xs-12">
                 <?php wp_nav_menu(array(
                     'theme_location'=>'footer',
                     'menu_class' => 'paprikas2018__footer-nav',
@@ -9,15 +9,7 @@
                     'walker' => new Walker_Nav_Menu_With_Separator()
                 )); ?>
             </div>
-            <div class="col-xs-12 visible-xs">
-                <?php wp_nav_menu(array(
-                    'theme_location'=>'footer',
-                    'menu_class' => 'paprikas2018__footer-nav',
-                    'items_wrap' => '<ul id="%1$s" class="%2$s list-unstyled footer__mobile-nav">%3$s</ul>',
-                )); ?>
-            </div>
         </div>
-        <hr />
         <div class="row">
             <div class="col-md-6">
                 <?php

@@ -19,23 +19,54 @@ class Walker_Nav_Menu_Mobile extends Walker_Nav_Menu
 
 
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-        $hyperlink = $item->url == '#'
-            ? "<a href='" . $item->url . "' class='nav-item dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>\n"
-            : "<a href='" . $item->url . "' class='nav-item'>\n";
+        $menu_content = "";
+        $is_pseudo_link = $item->url == "#";
 
-        $icon = isset($item->thumbnail_id) && strlen($item->thumbnail_id) > 0
-            ? "<img class='nav-icon' src='" . wp_get_attachment_url($item->thumbnail_id) . "'/>\n<br/>\n"
-            : "";
 
-        $hyperlink .= $icon . $item->title . "</a>\n";
+        // Add hyperlink
+        if($is_pseudo_link){
+            $menu_content .= sprintf(
+                "<a href='%s' class='dropdown-toggle %s' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>\n",
+                $item->url,
+                join(" ", $item->classes)
+            );
 
+        } else {
+            $menu_content .= sprintf(
+                "<a href='%s' class='%s'>\n",
+                $item->url,
+                join(" ", $item->classes)
+            );
+        }
+
+
+        // Add icon into the menu content
+        if(!empty($item->thumbnail_id)) {
+
+            $is_current_page_item = (isset($item->current) && $item->current) ||
+                                    (isset($item->current_item_ancestor) && $item->current_item_ancestor) ||
+                                    (isset($item->current_item_parent) && $item->current_item_parent);
+
+            $menu_content .= sprintf(
+                "<img class='nav-icon' src='%s' />\n<br />\n",
+                $is_current_page_item ? wp_get_attachment_url($item->thumbnail_hover_id)
+                                           : wp_get_attachment_url($item->thumbnail_id)
+            );
+        }
+
+
+        // Add menu title
+        $menu_content .= $item->title . "\n</a>\n";
+
+
+        // Wrap the menu content
         if ($depth == 0){
-            $output .= $item->url == '#'
-                ? "<div class='col-xs-3 text-center dropdown mobile-menu-item'>\n" . $hyperlink
-                : "<div class='col-xs-3 text-center'>\n" . $hyperlink;
+            $output .= $is_pseudo_link
+                ? "<div class='col-xs-3 text-center dropdown mobile-menu-item'>\n" . $menu_content
+                : "<div class='col-xs-3 text-center'>\n" . $menu_content;
 
         } else if ($depth == 1){
-            $output .= "<li>\n" . $hyperlink;
+            $output .= "<li>\n" . $menu_content;
         }
     }
 
