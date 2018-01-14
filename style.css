@@ -194,6 +194,11 @@ a:hover {
   text-align: center;
 }
 
+#paprikas2018-desktop-navbar {
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #paprikas2018-mobile-navbar .navbar-fixed-bottom {
   padding: 1rem 0;
   background-color: black;

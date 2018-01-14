@@ -42,7 +42,7 @@
 </div>
 
 
-<nav class="navbar navbar-default navbar-static-top hidden-xs" style="margin-bottom: 0;">
+<nav class="navbar navbar-default navbar-static-top hidden-xs" id="paprikas2018-desktop-navbar">
     <div class="container">
         <div id="navbar9" class="navbar-collapse collapse">
             <?php

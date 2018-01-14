@@ -155,12 +155,12 @@ a:hover {
 //
 //  Bootstrap Navbar
 //
-
 $bgDefault: $black;
 $bgHighlight: $darkRed;
 $colDefault: $orange;
 $colHighlight: $cream;
 $dropDown: false;
+
 .navbar-default {
   background-color: $bgDefault;
   border-color: $bgHighlight;
@@ -268,6 +268,16 @@ $dropDown: false;
   }
 
 }
+
+
+//
+//  Desktop navigation
+//
+#paprikas2018-desktop-navbar {
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 //
 //  Mobile Navigation
