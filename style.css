@@ -98,18 +98,22 @@ a:hover {
   padding-bottom: 2rem;
 }
 
-.fdm-section-header {
+.fdm-menu .fdm-section-header {
   color: #9F1D11;
   padding-top: 3rem;
 }
 
-.fdm-item-title {
+.fdm-menu .fdm-item-title {
   font-weight: bold;
 }
 
 #paprikas2018-top-slider .nivoSlider {
   max-height: 420px !important;
   overflow: hidden;
+}
+
+#paprikas2018-top-slider .paprikas2018-slider-mobile {
+  border-bottom: solid 1px #eda541;
 }
 
 .navbar-default {

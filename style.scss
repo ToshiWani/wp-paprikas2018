@@ -126,19 +126,19 @@ a:hover {
 // Restaurant Menu
 //
 
-.fdm-section-header {
-  color: $red;
-  padding-top: 3rem;
+.fdm-menu {
+
+  .fdm-section-header {
+    color: $red;
+    padding-top: 3rem;
+  }
+
+  .fdm-item-title {
+    font-weight: bold;
+  }
 }
 
-.fdm-item-title {
-  font-weight: bold;
 
-}
-
-.fdm-menu-content {
-
-}
 
 
 //
@@ -148,6 +148,10 @@ a:hover {
   .nivoSlider {
     max-height: 420px !important;
     overflow: hidden;
+  }
+
+  .paprikas2018-slider-mobile {
+    border-bottom: solid 1px darken($pastel, 25%);
   }
 }
 

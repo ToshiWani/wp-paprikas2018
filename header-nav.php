@@ -37,7 +37,11 @@
     <?php
     if (is_active_sidebar('paprikas2018_top_slider')) :
         dynamic_sidebar('paprikas2018_top_slider');
-    endif
+    endif;
+
+    if (is_active_sidebar('paprikas2018_top_slider_mobile')) :
+        dynamic_sidebar('paprikas2018_top_slider_mobile');
+    endif;
     ?>
 </div>
 

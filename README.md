@@ -19,6 +19,21 @@ Add Pages
 - Press
 - Contact Us
 
+
+Meta Slider
+----------------------------
+Setup slider for desktop and mobile
+
+- Desktop
+    - Nivo Slider
+    - 1920px X 420px
+    - CSS Class: "paprikas-2018-slider-desktop" 
+- Mobile
+    - Nivo Slider
+    - 768px X 293px
+    - CSS Class: "paprikas-2018-slider-mobile" 
+
+
 Add Menu (food)
 ----------------------------
 Setup menu sections (e.g. appetizers and desserts)

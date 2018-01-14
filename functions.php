@@ -20,9 +20,16 @@ add_action('init', function(){
     register_nav_menu('mobile', 'Mobile Navigation');
 
     register_sidebar(array(
-        'name' => 'Top Slider',
+        'name' => 'Top Slider for Desktop',
         'id' => 'paprikas2018_top_slider',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'before_widget' => '<div id="%1$s" class="hidden-xs widget %2$s">',
+        'after_widget' => '</div>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Top Slider for Mobile',
+        'id' => 'paprikas2018_top_slider_mobile',
+        'before_widget' => '<div id="%1$s" class="visible-xs widget %2$s">',
         'after_widget' => '</div>'
     ));
 
