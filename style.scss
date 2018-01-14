@@ -94,6 +94,10 @@ a:hover {
   }
 }
 
+//
+//  Footer
+//
+
 .footer {
   color: $cream;
   padding: 3rem 0 6rem;
@@ -111,7 +115,12 @@ a:hover {
     text-align: center;
   }
 
+  .widget {
+    padding-bottom: 2rem;
+  }
+
 }
+
 
 //
 // Restaurant Menu
@@ -131,6 +140,7 @@ a:hover {
 
 }
 
+
 //
 //  Slider
 //
@@ -140,6 +150,7 @@ a:hover {
     overflow: hidden;
   }
 }
+
 
 //
 //  Bootstrap Navbar

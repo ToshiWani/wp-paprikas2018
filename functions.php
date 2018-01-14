@@ -22,37 +22,45 @@ add_action('init', function(){
     register_sidebar(array(
         'name' => 'Top Slider',
         'id' => 'paprikas2018_top_slider',
-        'before_widget' => '<div>',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>'
     ));
 
     register_sidebar(array(
         'name' => 'Header Left',
         'id' => 'paprikas2018_header_left',
-        'before_widget' => '<div>',
-        'after_widget' => '</div>'
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+	    'after_title'   => '</h4>'
     ));
 
     register_sidebar(array(
         'name' => 'Header Right',
         'id' => 'paprikas2018_header_right',
-        'before_widget' => '<div>',
-        'after_widget' => '</div>'
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>'
     ));
 
 
     register_sidebar(array(
         'name' => 'Footer Left',
         'id' => 'paprikas2018_footer_left',
-        'before_widget' => '<div>',
-        'after_widget' => '</div>'
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>'
     ));
 
     register_sidebar(array(
         'name' => 'Footer Right',
         'id' => 'paprikas2018_footer_right',
-        'before_widget' => '<div>',
-        'after_widget' => '</div>'
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>'
     ));
 
 });

@@ -10,6 +10,7 @@
                 )); ?>
             </div>
         </div>
+        <hr class="hidden-xs" />
         <div class="row">
             <div class="col-md-6">
                 <?php
