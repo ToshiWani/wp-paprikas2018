@@ -11,6 +11,16 @@ Plugin Dependencies
 - Text Blocks
 - TinyMCE Advanced
 - Menu Image
+- WP Super Cache
+
+
+Disable Cahce
+----------------------------
+First, you must disable and clear cache:
+- Setting > WP Super Cache
+- Click Caching Off
+- Click Delete Cache
+
 
 Add Pages
 ----------------------------
@@ -108,4 +118,10 @@ Configurations:
 - Rules: (Post Type) + (is equal to) + (page)
 - Position: High
 
+
+Enanle Cahce
+----------------------------
+At the very last step, enable cache.  
+- Setting > WP Super Cache
+- Click Caching On
 

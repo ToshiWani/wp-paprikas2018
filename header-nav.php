@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-12">
                 <div class="hidden-xs header-text">
                     <?php
                     if (is_active_sidebar('paprikas2018_header_left')) :
@@ -10,17 +10,20 @@
                     ?>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-12">
                 <?php
-                    // Display Logo
-                    $custom_logo_id = get_theme_mod('custom_logo');
-                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-                    if(has_custom_logo()){
-                        echo '<img class="img-responsive center-block" src="' . esc_url($logo[0]) . '">';
-                    }
+                // Display Logo
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                $logo_url = esc_url($logo[0]);
                 ?>
+                <?php if (has_custom_logo()) : ?>
+                    <a href="/">
+                        <img src="<?php echo $logo_url ?>" class="img-responsive center-block" />
+                    </a>
+                <?php endif; ?>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-12">
                 <div class="hidden-xs header-text text-right">
                     <?php
                     if (is_active_sidebar('paprikas2018_header_right')) :
