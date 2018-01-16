@@ -47,9 +47,18 @@ a:hover {
   border-top: 1rem solid #71150c;
 }
 
-.header .row {
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .header .row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .header #paprikas2018-main-logo {
+    max-height: 8rem;
+    width: auto;
+  }
 }
 
 .header .header-text {
@@ -217,7 +226,12 @@ a:hover {
 
 #paprikas2018-desktop-navbar {
   margin-bottom: 0;
-  font-size: 16px;
+}
+
+@media (min-width: 991px) {
+  #paprikas2018-desktop-navbar {
+    font-size: 16px;
+  }
 }
 
 #paprikas2018-mobile-navbar .navbar-fixed-bottom {

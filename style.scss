@@ -81,10 +81,19 @@ a {
   border-bottom: 1px solid $darkRed;
   border-top: 1rem solid $darkRed;
 
-  .row {
-    // Vertical alignment
-    display: flex;
-    align-items: center;
+  // Vertical alignment (bootstrap override)
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #paprikas2018-main-logo {
+      max-height: 8rem;
+      width: auto;
+    }
   }
 
   .header-text {
@@ -329,7 +338,10 @@ $dropDown: false;
 //
 #paprikas2018-desktop-navbar {
   margin-bottom: 0;
-  font-size: 16px;
+
+  @media (min-width: 991px) {
+    font-size: 16px;
+  }
 }
 
 

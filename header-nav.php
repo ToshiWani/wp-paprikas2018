@@ -19,7 +19,7 @@
                 ?>
                 <?php if (has_custom_logo()) : ?>
                     <a href="/">
-                        <img src="<?php echo $logo_url ?>" class="img-responsive center-block" />
+                        <img src="<?php echo $logo_url ?>" class="img-responsive center-block" id="paprikas2018-main-logo" />
                     </a>
                 <?php endif; ?>
             </div>
