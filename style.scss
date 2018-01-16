@@ -29,6 +29,7 @@ $black: darken($red, 80%);
 $lightGreen: lighten($green, 10%);
 $darkGreen: darken($green, 10%);
 
+
 body {
   background-color: $orange;
   font-family: 'Merriweather', serif;
@@ -52,98 +53,40 @@ h1, h2, h3 {
 
 a {
   color: $green;
+
+  &:hover {
+    color: $lightGreen;
+  }
 }
 
-a:hover {
-  color: $lightGreen;
-}
 
-.top-label {
-  background-color: $black;
-  color: $orange;
-}
+//
+//  Header Area
+//
 
 .header {
   background: url("img/translucent-fibres.png") $red;
   padding: 1rem 0;
   border-bottom: 1px solid $darkRed;
   border-top: 1rem solid $darkRed;
-}
 
-.header-text {
-  font-size: smaller;
-  color: $cream;
-}
+  .row {
+    // Vertical alignment
+    display: flex;
+    align-items: center;
+  }
 
-.headline {
-  hr {
-    border-color: transparentize($red, 0.8);
+  .header-text {
+    font-size: smaller;
+    color: $cream;
   }
 }
-
-.main-content {
-  background: url("img/translucent-fibres.png") $pastel;
-  padding: 3rem 0;
-
-  .main-content__text {
-    padding: 0 3rem 0;
-    p {
-      line-height: 3rem;
-      margin-bottom: 3rem;
-    }
-  }
-}
-
-//
-//  Footer
-//
-
-.footer {
-  color: $cream;
-  padding: 3rem 0 6rem;
-  background-color: $darkRed;
-  border-top: solid 1px $black;
-
-  a {
-    color: $orange;
-  }
-  a:hover {
-    color: $pastel;
-  }
-
-  .footer__mobile-nav {
-    text-align: center;
-  }
-
-  .widget {
-    padding-bottom: 2rem;
-  }
-
-}
-
-
-//
-// Restaurant Menu
-//
-
-.fdm-menu {
-
-  .fdm-section-header {
-    color: $red;
-    padding-top: 3rem;
-  }
-
-  .fdm-item-title {
-    font-weight: bold;
-  }
-}
-
-
 
 
 //
 //  Slider
 //
+
 #paprikas2018-top-slider {
   .nivoSlider {
     max-height: 420px !important;
@@ -157,7 +100,82 @@ a:hover {
 
 
 //
-//  Bootstrap Navbar
+//  Content Area
+//
+
+.main-content {
+  background: url("img/translucent-fibres.png") $pastel;
+  padding: 3rem 0;
+
+  .headline {
+    hr {
+      border-color: transparentize($red, 0.8);
+    }
+  }
+
+  .main-content__text {
+    padding: 0 3rem 0;
+
+    p {
+      line-height: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+
+//
+//  Footer
+//
+
+.footer {
+  color: $cream;
+  padding: 3rem 0 6rem;
+  background-color: $darkRed;
+  border-top: solid 1px $black;
+
+  a {
+    color: $orange;
+
+    &:hover {
+      color: $pastel;
+    }
+  }
+
+  .widget {
+    padding-bottom: 2rem;
+  }
+
+  hr {
+    border-style: dotted;
+  }
+}
+
+
+//
+// Restaurant Menu
+//
+
+.fdm-menu {
+
+  .fdm-section-header {
+    color: $red;
+    padding-top: 3rem;
+    border-bottom-style: dotted;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .fdm-item-title {
+    font-weight: bold;
+  }
+}
+
+
+//
+//  Bootstrap Navbar Override
 //
 $bgDefault: $black;
 $bgHighlight: $darkRed;
@@ -279,7 +297,7 @@ $dropDown: false;
 //
 #paprikas2018-desktop-navbar {
   margin-bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 

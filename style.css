@@ -40,11 +40,6 @@ a:hover {
   color: #1c9d1c;
 }
 
-.top-label {
-  background-color: black;
-  color: #FCA164;
-}
-
 .header {
   background: url("img/translucent-fibres.png") #9F1D11;
   padding: 1rem 0;
@@ -52,18 +47,32 @@ a:hover {
   border-top: 1rem solid #71150c;
 }
 
-.header-text {
+.header .row {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-text {
   font-size: smaller;
   color: #FAF5DB;
 }
 
-.headline hr {
-  border-color: rgba(159, 29, 17, 0.2);
+#paprikas2018-top-slider .nivoSlider {
+  max-height: 420px !important;
+  overflow: hidden;
+}
+
+#paprikas2018-top-slider .paprikas2018-slider-mobile {
+  border-bottom: solid 1px #eda541;
 }
 
 .main-content {
   background: url("img/translucent-fibres.png") #F8DCB5;
   padding: 3rem 0;
+}
+
+.main-content .headline hr {
+  border-color: rgba(159, 29, 17, 0.2);
 }
 
 .main-content .main-content__text {
@@ -90,30 +99,26 @@ a:hover {
   color: #F8DCB5;
 }
 
-.footer .footer__mobile-nav {
-  text-align: center;
-}
-
 .footer .widget {
   padding-bottom: 2rem;
+}
+
+.footer hr {
+  border-style: dotted;
 }
 
 .fdm-menu .fdm-section-header {
   color: #9F1D11;
   padding-top: 3rem;
+  border-bottom-style: dotted;
+}
+
+.fdm-menu .fdm-section-header p {
+  margin-bottom: 0;
 }
 
 .fdm-menu .fdm-item-title {
   font-weight: bold;
-}
-
-#paprikas2018-top-slider .nivoSlider {
-  max-height: 420px !important;
-  overflow: hidden;
-}
-
-#paprikas2018-top-slider .paprikas2018-slider-mobile {
-  border-bottom: solid 1px #eda541;
 }
 
 .navbar-default {
@@ -200,7 +205,7 @@ a:hover {
 
 #paprikas2018-desktop-navbar {
   margin-bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 #paprikas2018-mobile-navbar .navbar-fixed-bottom {
