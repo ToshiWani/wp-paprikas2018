@@ -13,7 +13,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 body {
   background-color: #FCA164;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
   letter-spacing: 0.0625em;
   color: black;
 }
@@ -29,7 +29,7 @@ h2 {
 }
 
 h1, h2, h3 {
-  font-family: 'Sail', cursive;
+  font-family: "Sail", cursive;
 }
 
 a {
@@ -84,6 +84,15 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+#sb_instagram h1, #sb_instagram h2, #sb_instagram h3, #sb_instagram h4 {
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+}
+
+#sb_instagram p.sbi_bio {
+  color: #71150c;
+  font-size: smaller;
+}
+
 .footer {
   color: #FAF5DB;
   padding: 3rem 0 6rem;
@@ -93,10 +102,12 @@ a:hover {
 
 .footer a {
   color: #FCA164;
+  transition: color 0.6s ease;
 }
 
 .footer a:hover {
   color: #F8DCB5;
+  text-decoration: none;
 }
 
 .footer .widget {
@@ -140,6 +151,7 @@ a:hover {
 
 .navbar-default .navbar-nav > li > a {
   color: #FCA164;
+  transition: color 0.6s ease;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {

@@ -30,9 +30,20 @@ $lightGreen: lighten($green, 10%);
 $darkGreen: darken($green, 10%);
 
 
+//
+//  Fonts
+//
+$defaultFontStack: 'Merriweather', 'Times New Roman', Times, serif;
+$headerFontStack: 'Sail', cursive;
+$mobileNavFontStack: Arial, Helvetica, sans-serif;
+
+//
+//  Global Styling
+//
+
 body {
   background-color: $orange;
-  font-family: 'Merriweather', serif;
+  font-family: $defaultFontStack;
   letter-spacing: 0.0625em;
   color: $black;
 }
@@ -48,7 +59,7 @@ h2 {
 }
 
 h1, h2, h3 {
-  font-family: 'Sail', cursive;
+  font-family: $headerFontStack;
 }
 
 a {
@@ -125,6 +136,23 @@ a {
 
 
 //
+//  Instagram Plugin Override
+//
+
+#sb_instagram {
+  h1, h2, h3, h4 {
+    font-family: $defaultFontStack;
+  }
+
+  p.sbi_bio {
+    color: $darkRed;
+    font-size: smaller;
+  }
+}
+
+
+
+//
 //  Footer
 //
 
@@ -136,9 +164,11 @@ a {
 
   a {
     color: $orange;
+    transition: color 0.6s ease;
 
     &:hover {
       color: $pastel;
+      text-decoration: none;
     }
   }
 
@@ -199,6 +229,8 @@ $dropDown: false;
     > li {
       > a {
         color: $colDefault;
+        transition: color 0.6s ease;
+
         &:hover, &:focus {
           color: $colHighlight;
         }
@@ -315,7 +347,7 @@ $dropDown: false;
   a {
     color: $colDefault;
     font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $mobileNavFontStack;
     background-color: transparent;
 
     &.menu-item, &.menu-item:focus, &.menu-item:hover, &.menu-item:active {
