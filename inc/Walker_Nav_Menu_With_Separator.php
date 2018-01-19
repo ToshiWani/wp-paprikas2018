@@ -8,12 +8,15 @@
 
 class Walker_Nav_Menu_With_Separator extends Walker_Nav_Menu
 {
-    public function end_el( &$output, $item, $depth = 0, $args = array() ) {
+    public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+        $cls = isset($item->classes) ? join(" ", $item->classes) : "";
+        $output .= sprintf("<li class='%s'><a href='%s'>%s</a>", $cls, $item->url, $item->title);
+    }
 
-        if(isset($item->menu_order) && isset($args->menu->count) && $item->menu_order == $args->menu->count) {
-            $output .= '</li>';
-        } else {
-            $output .= '<span> | </span></li>';
+    public function end_el( &$output, $item, $depth = 0, $args = array() ) {
+        if($item->menu_order != $args->menu->count) {
+            $output .= "<span class='menu-delimiter'>|</span>";
         }
+        $output .= "</li>";
     }
 }

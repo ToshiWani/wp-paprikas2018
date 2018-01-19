@@ -1,16 +1,5 @@
 <footer class="footer">
     <div class="container">
-        <div class="row hidden-xs">
-            <div class="col-xs-12">
-                <?php wp_nav_menu(array(
-                    'theme_location'=>'footer',
-                    'menu_class' => 'paprikas2018__footer-nav',
-                    'items_wrap' => '<ul id="%1$s" class="%2$s list-inline">%3$s</ul>',
-                    'walker' => new Walker_Nav_Menu_With_Separator()
-                )); ?>
-            </div>
-        </div>
-        <hr class="hidden-xs" />
         <div class="row">
             <div class="col-md-6">
                 <?php
@@ -23,6 +12,25 @@
                 <?php
                 if (is_active_sidebar('paprikas2018_footer_right')) :
                     dynamic_sidebar('paprikas2018_footer_right');
+                endif
+                ?>
+            </div>
+        </div>
+
+        <hr class="hidden-xs" />
+
+        <div class="row row-vcenter hidden-xs">
+            <div class="col-sm-9">
+                <?php wp_nav_menu(array(
+                    'theme_location'=>'footer',
+                    'menu_class' => 'list-inline',
+                    'walker' => new Walker_Nav_Menu_With_Separator()
+                )); ?>
+            </div>
+            <div class="col-sm-3">
+                <?php
+                if (is_active_sidebar('paprikas2018_footer_logo')) :
+                    dynamic_sidebar('paprikas2018_footer_logo');
                 endif
                 ?>
             </div>

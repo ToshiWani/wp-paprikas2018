@@ -40,6 +40,11 @@ a:hover {
   color: #1c9d1c;
 }
 
+.row.row-vcenter {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background: url("img/translucent-fibres.png") #9F1D11;
   padding: 1rem 0;
@@ -104,7 +109,7 @@ a:hover {
 
 .footer {
   color: #FAF5DB;
-  padding: 3rem 0 6rem;
+  padding: 3rem 0 9rem;
   background-color: #71150c;
   border-top: solid 1px black;
 }
@@ -125,6 +130,10 @@ a:hover {
 
 .footer hr {
   border-style: dotted;
+}
+
+.menu-footer-container .menu-delimiter {
+  padding-left: 10px;
 }
 
 .fdm-menu .fdm-section-header {

@@ -70,6 +70,14 @@ a {
   }
 }
 
+.row{
+  &.row-vcenter {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
 
 //
 //  Header Area
@@ -160,14 +168,13 @@ a {
 }
 
 
-
 //
 //  Footer
 //
 
 .footer {
   color: $cream;
-  padding: 3rem 0 6rem;
+  padding: 3rem 0 9rem;
   background-color: $darkRed;
   border-top: solid 1px $black;
 
@@ -190,6 +197,11 @@ a {
   }
 }
 
+.menu-footer-container {
+  .menu-delimiter {
+    padding-left: 10px;
+  }
+}
 
 //
 // Restaurant Menu
