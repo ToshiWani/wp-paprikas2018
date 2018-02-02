@@ -18,7 +18,9 @@ Template Name: Two Columns
         <div class="row">
             <div class="col-xs-12 headline">
                 <?php
-                if (get_field('headline')):
+                if (!function_exists('get_field')):
+                    echo "ERROR!! The 'Advanced Custom Fields' plugin is required";
+                elseif (get_field('headline')):
                     the_field('headline');
                 endif;
                 ?>
@@ -44,8 +46,6 @@ Template Name: Two Columns
                     dynamic_sidebar('paprikas2018_front_page_right');
                 endif;
                 ?>
-
-                <?php //echo do_shortcode("[instagram-feed num=4 cols=2]") ?>
             </div>
         </div>
 
