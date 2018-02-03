@@ -3,14 +3,14 @@ Paprikas 2018
 
 Plugin Dependencies
 ----------------------------
-- Advanced Custom Fields
-- Contact Form 7
-- Food and Drink Menu
-- Instagram Feed
-- Meta Slider
-- Text Blocks
-- TinyMCE Advanced
-- Menu Image
+- Advanced Custom Fields (advanced-custom-fields)
+- Contact Form 7 (contact-form-7)
+- Food and Drink Menu (food-and-drink-menu)
+- Instagram Feed (instagram-feed)
+- Meta Slider (ml-slider)
+- Text Blocks (reusable-text-blocks)
+- TinyMCE Advanced (tinymce-advanced)
+- Menu Image (menu-image)
 - WP Super Cache
 
 
@@ -66,9 +66,11 @@ Settings > Reading > A Static Page
 
 Navigation
 ----------------------------
-Appearance > Menus
+Appearance > Customize > Menus
 - Add navigation in header, footer, and mobile
 - Upload and set menu icons
+
+NOTE: As of Feb 2018, you can add food menus ONLY from Appearance > Customize > Menus.
 
 
 Text Blocks

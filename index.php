@@ -12,7 +12,9 @@
             <div class="col-xs-12 headline">
                 <h1><?php wp_title('') ?></h1>
                 <?php
-                if (get_field('headline')):
+                if (!function_exists('get_field')):
+                    echo "ERROR!! The 'Advanced Custom Fields' plugin is required";
+                elseif (get_field('headline')):
                     the_field('headline');
                 endif;
                 ?>
