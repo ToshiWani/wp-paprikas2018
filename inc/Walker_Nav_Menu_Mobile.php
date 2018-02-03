@@ -21,21 +21,21 @@ class Walker_Nav_Menu_Mobile extends Walker_Nav_Menu
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
         $menu_content = "";
         $is_pseudo_link = $item->url == "#";
-
+        $classes = isset($item->classes) ? join(" ", $item->classes) : "";
 
         // Add hyperlink
         if($is_pseudo_link){
             $menu_content .= sprintf(
                 "<a href='%s' class='dropdown-toggle %s' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>\n",
                 $item->url,
-                join(" ", $item->classes)
+                $classes
             );
 
         } else {
             $menu_content .= sprintf(
                 "<a href='%s' class='%s'>\n",
                 $item->url,
-                join(" ", $item->classes)
+                $classes
             );
         }
 
