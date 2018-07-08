@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header zigzag">
     <div class="container">
         <div class="row">
             <div class="col-sm-4 col-xs-12">
@@ -49,9 +49,9 @@
 </div>
 
 
-<nav class="navbar navbar-default navbar-static-top hidden-xs" id="paprikas2018-desktop-navbar">
+<nav class="navbar navbar-default navbar-static-top hidden-xs" id="nav-desktop">
     <div class="container">
-        <div id="navbar9" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse">
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',

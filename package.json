@@ -18,6 +18,10 @@
   "homepage": "https://github.com/ToshiWani/wp-paprikas2018#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-npm-dist": "^1.0.1",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "scrollreveal": "^3.4.0"
   }
 }

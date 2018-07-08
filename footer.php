@@ -1,14 +1,21 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <?php
                 if (is_active_sidebar('paprikas2018_footer_left')) :
                     dynamic_sidebar('paprikas2018_footer_left');
                 endif
                 ?>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <?php
+                if (is_active_sidebar('paprikas2018_footer_center')) :
+                    dynamic_sidebar('paprikas2018_footer_center');
+                endif
+                ?>
+            </div>
+            <div class="col-md-4">
                 <?php
                 if (is_active_sidebar('paprikas2018_footer_right')) :
                     dynamic_sidebar('paprikas2018_footer_right');
@@ -49,3 +56,28 @@ wp_nav_menu(array(
 ?>
 
 <?php wp_footer(); ?>
+
+<script>
+
+    jQuery(document).ready(function () {
+        jQuery('.main-content').css('visibility', 'visible');
+    });
+
+    sr.reveal('.panel-grid-cell');
+    sr.reveal('.fdm-menu-content');
+    sr.reveal('.fdm-section-header')
+    sr.reveal('.fdm-item');
+    sr.reveal('.sbi_item');
+    sr.reveal('.footer');
+
+    jQuery('.sbi').ready(function () {
+        console.log('READY!!')
+        sr.sync();
+    });
+
+    jQuery('.sbi').load(function () {
+        console.log('LOAD!!')
+    });
+
+
+</script>

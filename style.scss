@@ -25,7 +25,7 @@ $green: #147214;
 // Extended Colors
 //
 $darkRed: darken($red, 10%);
-$black: darken($red, 80%);
+$black: darken($red, 27%);
 $lightGreen: lighten($green, 10%);
 $darkGreen: darken($green, 10%);
 
@@ -33,42 +33,51 @@ $darkGreen: darken($green, 10%);
 //
 //  Fonts
 //
-$defaultFontStack: 'Merriweather', 'Times New Roman', Times, serif;
-$headerFontStack: 'Sail', cursive;
+$defaultFontStack: 'Mirza', cursive;
+$headerFontStack: 'Oleo Script Swash Caps', cursive;
+
 $mobileNavFontStack: Arial, Helvetica, sans-serif;
+$footerFontStack: Arial, Helvetica, sans-serif;
 
 //
 //  Global Styling
 //
 
 body {
-  background-color: $orange;
+  background: url("img/fake-luxury.png") $pastel;
   font-family: $defaultFontStack;
   letter-spacing: 0.0625em;
   color: $black;
+  font-size: 1.8rem;
+  border-color: $black;
 }
 
 h1 {
   color: $red;
-  font-size: 60px;
-}
-
-h2 {
-  color: $darkRed;
-  font-size: 36px;
-}
-
-h1, h2, h3 {
+  font-size: 6.4rem;
   font-family: $headerFontStack;
 }
 
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
 a {
-  color: $green;
+  color: $red;
 
   &:hover {
-    color: $lightGreen;
+    color: $orange;
   }
 }
+
+textarea{
+  height: 10rem;
+}
+
 
 .row{
   &.row-vcenter {
@@ -77,7 +86,15 @@ a {
   }
 }
 
+img.left-float{
+  float: left;
+  margin: 1rem 3rem 1rem 0;
+}
 
+img.right-float{
+  float: right;
+  margin: 1rem 0 1rem 1rem;
+}
 
 //
 //  Header Area
@@ -108,6 +125,35 @@ a {
     font-size: smaller;
     color: $cream;
   }
+
+  a {
+    color: $orange;
+    transition: color 0.6s ease;
+
+    &:hover {
+      color: $pastel;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.zigzag {
+  position: relative;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+  z-index: 9999;
+}
+
+.zigzag::after {
+  height: 16px;
+  left: 0;
+  bottom: -16px;
+  width: 100%;
+  position: absolute;
+  content: "";
+  background: url("img/translucent-fibres.png"), linear-gradient(135deg, $red 10px, transparent 0), linear-gradient(225deg, $red 10px, transparent 0);
+  background-size: 16px 16px;
 }
 
 
@@ -128,45 +174,69 @@ a {
 
 
 //
+//  Nav
+//
+
+#nav-desktop{
+  font-size: 2.2rem;
+
+  .menu-image-title-after{
+    top: 1rem;
+  }
+}
+
+
+
+//
 //  Content Area
 //
 
 .main-content {
-  background: url("img/translucent-fibres.png") $pastel;
-  padding: 3rem 0;
 
-  .headline {
-    hr {
-      border-color: transparentize($red, 0.8);
-    }
-  }
+  padding: 3rem 0;
 
   .main-content__text {
     padding: 0 3rem 0;
 
     p {
-      line-height: 3rem;
-      margin-bottom: 3rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dotted $darkRed;
+  }
+}
+
+
+.panel-menu {
+  a {
+    img {
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      }
     }
   }
 }
 
 
+
 //
-//  Instagram Plugin Override
+//  Instagram Widget Override
 //
 
-#sb_instagram {
-  h1, h2, h3, h4 {
-    font-family: $defaultFontStack;
+.sbi {
+  h3.sbi_no_bio {
+    font-size: 1.8rem !important;
   }
-
-  p.sbi_bio {
-    color: $darkRed;
-    font-size: smaller;
+  .sbi_follow_btn {
+    a {
+      background: $red !important;
+    }
   }
 }
-
 
 //
 //  Footer
@@ -177,6 +247,12 @@ a {
   padding: 3rem 0 9rem;
   background-color: $darkRed;
   border-top: solid 1px $black;
+  //font-family: $footerFontStack;
+
+  h1, h2, h3, h4, h5, h6{
+    //font-family: $defaultFontStack;
+    color: $pastel;
+  }
 
   a {
     color: $orange;
@@ -188,12 +264,16 @@ a {
     }
   }
 
+  hr {
+    border-style: dotted;
+  }
+
   .widget {
     padding-bottom: 2rem;
   }
 
-  hr {
-    border-style: dotted;
+  .widgettitle {
+    font-size: 2.4rem;
   }
 }
 
@@ -364,13 +444,13 @@ $dropDown: false;
 #paprikas2018-mobile-navbar {
 
   .navbar-fixed-bottom {
-    padding: 1rem 0;
+    padding: 0.2rem 0 0;
     background-color: $bgDefault;
   }
 
   a {
     color: $colDefault;
-    font-size: 11px;
+    font-size: 1rem;
     font-family: $mobileNavFontStack;
     background-color: transparent;
 
@@ -387,14 +467,16 @@ $dropDown: false;
     background-color: $bgDefault;
     width: 100%;
     position: fixed;
-    bottom: 6rem;
+    bottom: 4.8rem;
+
 
     li {
-      padding: 1.6rem 0;
+      padding: 1.2rem 0;
 
       a {
         text-align: center;
         color: $colDefault;
+        line-height: 2rem;
 
         &.current-menu-item, &.current_page_item {
           color: $lightGreen;
@@ -404,7 +486,8 @@ $dropDown: false;
   }
 
   img.nav-icon {
-    width: 24px;
-    height: 24px;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: -1rem;
   }
 }

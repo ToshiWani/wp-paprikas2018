@@ -6,22 +6,6 @@
 <?php include_once 'header-nav.php'; ?>
 <div class="main-content">
     <div class="container">
-
-        <!-- Headline -->
-        <div class="row">
-            <div class="col-xs-12 headline">
-                <h1><?php wp_title('') ?></h1>
-                <?php
-                if (!function_exists('get_field')):
-                    echo "ERROR!! The 'Advanced Custom Fields' plugin is required";
-                elseif (get_field('headline')):
-                    the_field('headline');
-                endif;
-                ?>
-                <hr />
-            </div>
-        </div>
-
         <!-- Main Content -->
         <div class="row">
             <div class="col-xs-12 main-content__text">
@@ -35,7 +19,6 @@
                 ?>
             </div>
         </div>
-
     </div>
 </div>
 
