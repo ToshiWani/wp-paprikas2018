@@ -48,18 +48,13 @@
     ?>
 </div>
 
-
-<nav class="navbar navbar-default navbar-static-top hidden-xs" id="nav-desktop">
-    <div class="container">
-        <div class="navbar-collapse collapse">
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'primary',
-                'menu_class' => 'nav navbar-nav'
-            ));
-            ?>
-        </div>
-        <!--/.nav-collapse -->
+<nav id="nav-desktop" class="hidden-xs">
+    <div class="center-block">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary',
+            'menu_class' => 'list-inline'
+        ));
+        ?>
     </div>
-    <!--/.container -->
 </nav>

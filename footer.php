@@ -70,14 +70,4 @@ wp_nav_menu(array(
     sr.reveal('.sbi_item');
     sr.reveal('.footer');
 
-    jQuery('.sbi').ready(function () {
-        console.log('READY!!')
-        sr.sync();
-    });
-
-    jQuery('.sbi').load(function () {
-        console.log('LOAD!!')
-    });
-
-
 </script>

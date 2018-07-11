@@ -123,14 +123,6 @@ img.right-float {
   border-bottom: solid 1px #eda541;
 }
 
-#nav-desktop {
-  font-size: 2.2rem;
-}
-
-#nav-desktop .menu-image-title-after {
-  top: 1rem;
-}
-
 .main-content {
   padding: 3rem 0;
 }
@@ -212,97 +204,27 @@ img.right-float {
   font-weight: bold;
 }
 
-.navbar-default {
+#nav-desktop {
+  font-size: 2.2rem;
+  line-height: 6.2rem;
+  height: 5.4rem;
   background-color: #230604;
-  border-color: #71150c;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar-default .navbar-brand {
-  color: #FCA164;
+#nav-desktop li.menu-item {
+  margin: 0 0.75rem;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #FAF5DB;
-}
-
-.navbar-default .navbar-text {
-  color: #FCA164;
-}
-
-.navbar-default .navbar-nav > li > a {
+#nav-desktop li.menu-item a {
   color: #FCA164;
   transition: color 0.6s ease;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #FAF5DB;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #FAF5DB;
-  background-color: #71150c;
-}
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #FAF5DB;
-  background-color: #71150c;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #71150c;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #71150c;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #FCA164;
-}
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #FCA164;
-}
-
-.navbar-default .navbar-link {
-  color: #FCA164;
-}
-
-.navbar-default .navbar-link:hover {
-  color: #FAF5DB;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #FCA164;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #FAF5DB;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #FAF5DB;
-    background-color: #71150c;
-  }
-}
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-#paprikas2018-desktop-navbar {
-  margin-bottom: 0;
-}
-
-@media (min-width: 991px) {
-  #paprikas2018-desktop-navbar {
-    font-size: 16px;
-  }
+#nav-desktop li.menu-item a:hover, #nav-desktop li.menu-item a:active {
+  color: #F8DCB5;
+  text-decoration: none;
 }
 
 #paprikas2018-mobile-navbar .navbar-fixed-bottom {

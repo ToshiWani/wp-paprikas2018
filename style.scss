@@ -174,20 +174,6 @@ img.right-float{
 
 
 //
-//  Nav
-//
-
-#nav-desktop{
-  font-size: 2.2rem;
-
-  .menu-image-title-after{
-    top: 1rem;
-  }
-}
-
-
-
-//
 //  Content Area
 //
 
@@ -247,10 +233,8 @@ img.right-float{
   padding: 3rem 0 9rem;
   background-color: $darkRed;
   border-top: solid 1px $black;
-  //font-family: $footerFontStack;
 
   h1, h2, h3, h4, h5, h6{
-    //font-family: $defaultFontStack;
     color: $pastel;
   }
 
@@ -306,133 +290,31 @@ img.right-float{
 
 
 //
-//  Bootstrap Navbar Override
+//  Desktop Navigation
 //
-$bgDefault: $black;
-$bgHighlight: $darkRed;
-$colDefault: $orange;
-$colHighlight: $cream;
-$dropDown: false;
+#nav-desktop{
 
-.navbar-default {
-  background-color: $bgDefault;
-  border-color: $bgHighlight;
-  .navbar-brand {
-    color: $colDefault;
-    &:hover, &:focus {
-      color: $colHighlight;
-    }
-  }
-  .navbar-text {
-    color: $colDefault;
-  }
-  .navbar-nav {
-    > li {
-      > a {
-        color: $colDefault;
-        transition: color 0.6s ease;
+  font-size: 2.2rem;
+  line-height: 6.2rem;
+  height: 5.4rem;
 
-        &:hover, &:focus {
-          color: $colHighlight;
-        }
-      }
-      @if $dropDown {
-        > .dropdown-menu {
-          background-color: $bgDefault;
-          > li {
-            > a {
-              color: $colDefault;
-              &:hover, &:focus {
-                color: $colHighlight;
-                background-color: $bgHighlight;
-              }
-            }
-            &.divider {
-              background-color: $bgHighlight;
-            }
-          }
-        }
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+
+  li.menu-item {
+
+    margin: 0 0.75rem;
+
+    a {
+      color: $orange;
+      transition: color 0.6s ease;
+
+      &:hover, &:active {
+        color: $pastel;
+        text-decoration: none;
       }
     }
-    @if $dropDown {
-      .open .dropdown-menu > .active {
-        > a, > a:hover, > a:focus {
-          color: $colHighlight;
-          background-color: $bgHighlight;
-        }
-      }
-    }
-    > .active {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-color: $bgHighlight;
-      }
-    }
-    > .open {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-color: $bgHighlight;
-      }
-    }
-  }
-  .navbar-toggle {
-    border-color: $bgHighlight;
-    &:hover, &:focus {
-      background-color: $bgHighlight;
-    }
-    .icon-bar {
-      background-color: $colDefault;
-    }
-  }
-  .navbar-collapse,
-  .navbar-form {
-    border-color: $colDefault;
-  }
-  .navbar-link {
-    color: $colDefault;
-    &:hover {
-      color: $colHighlight;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-    > li > a {
-      color: $colDefault;
-      &:hover, &:focus {
-        color: $colHighlight;
-      }
-    }
-    > .active {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-color: $bgHighlight;
-      }
-    }
-  }
-}
-
-.navbar {
-  .navbar-nav {
-    display: inline-block;
-    float: none;
-  }
-  .navbar-collapse {
-    text-align: center;
-  }
-
-}
-
-
-//
-//  Desktop navigation
-//
-#paprikas2018-desktop-navbar {
-  margin-bottom: 0;
-
-  @media (min-width: 991px) {
-    font-size: 16px;
   }
 }
 
@@ -445,11 +327,11 @@ $dropDown: false;
 
   .navbar-fixed-bottom {
     padding: 0.2rem 0 0;
-    background-color: $bgDefault;
+    background-color: $black;
   }
 
   a {
-    color: $colDefault;
+    color: $orange;
     font-size: 1rem;
     font-family: $mobileNavFontStack;
     background-color: transparent;
@@ -464,7 +346,7 @@ $dropDown: false;
   }
 
   .dropdown-menu {
-    background-color: $bgDefault;
+    background-color: $black;
     width: 100%;
     position: fixed;
     bottom: 4.8rem;
@@ -475,7 +357,7 @@ $dropDown: false;
 
       a {
         text-align: center;
-        color: $colDefault;
+        color: $orange;
         line-height: 2rem;
 
         &.current-menu-item, &.current_page_item {
