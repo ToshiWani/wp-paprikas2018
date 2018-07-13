@@ -141,8 +141,13 @@ img.right-float {
   border-top: 1px dotted #71150c;
 }
 
+.panel-menu a img {
+  box-shadow: none;
+  transition: box-shadow 500ms ease-out;
+}
+
 .panel-menu a img:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 50px 0 #230604;
 }
 
 .sbi h3.sbi_no_bio {
