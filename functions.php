@@ -9,7 +9,6 @@ add_action('wp_enqueue_scripts', function(){
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0');
 
     // JS
-    //wp_enqueue_script('jquery', '//code.jquery.com/jquery-2.2.4.min.js', array(),'', true);
     wp_enqueue_script('bootstrap-script', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array(),'', true);
     wp_enqueue_script('scrollreveal-script', get_template_directory_uri() . '/libs/scrollreveal/dist/scrollreveal.min.js', array(),'', false);
 });

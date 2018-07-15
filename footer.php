@@ -59,6 +59,9 @@ wp_nav_menu(array(
 
 <script>
 
+    //
+    // scrollreveal
+    //
     jQuery(document).ready(function () {
         jQuery('.main-content').css('visibility', 'visible');
     });
@@ -69,5 +72,30 @@ wp_nav_menu(array(
     sr.reveal('.fdm-item');
     sr.reveal('.sbi_item');
     sr.reveal('.footer');
+
+
+    //
+    // Sticky nav
+    //
+    function addRemoveSticky(nav, position) {
+        if(window.pageYOffset > position) {
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove("sticky");
+        }
+    }
+
+    window.onload = function(){
+        var nav = document.querySelector('#nav-desktop');
+        var navOffsetTop = nav.offsetTop;
+
+        // Initializer
+        addRemoveSticky(nav, navOffsetTop);
+
+        // On scroll event
+        window.onscroll = function(){
+            addRemoveSticky(nav, navOffsetTop);
+        };
+    };
 
 </script>

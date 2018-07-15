@@ -216,6 +216,9 @@ img.right-float {
   background-color: #230604;
   display: flex;
   justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: 500ms background-color;
 }
 
 #nav-desktop li.menu-item {
@@ -230,6 +233,14 @@ img.right-float {
 #nav-desktop li.menu-item a:hover, #nav-desktop li.menu-item a:active {
   color: #F8DCB5;
   text-decoration: none;
+}
+
+#nav-desktop.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(35, 6, 4, 0.8);
+  transition: 500ms background-color;
 }
 
 #paprikas2018-mobile-navbar .navbar-fixed-bottom {
